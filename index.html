@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Aqua Pura - Sistema de Captación de Agua Pluvial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="#about">¿Quiénes Somos?</a></li>
+            <li><a href="#requests">Solicitudes</a></li>
+        </ul>
+    </nav>
+    <div class="header-content">
+    <img src="logo.png" alt="Logo Aqua Pura" class="logo"></a>
+        <h1>Proyecto Aqua Pura</h1>
+        <p>Sistema de Captación de Agua Pluvial y Capacitación</p>
+    </div>
+</header>
+
+<main>
+    <section id="about">
+        <h2>¿Quiénes Somos?</h2>
+        <div class="about-section">
+            <img src="about-image.png" class="section-image">
+            <p>Somos un proyecto comunitario en Atlixco dedicado a mejorar la gestión hídrica mediante la implementación de sistemas de captación de agua de lluvia, reducción de riesgo de inundaciones y la capacitación de la comunidad en el uso eficiente de recursos hídricos.</p>
+        </div>
+        <h2>Misión</h2>
+        <p>Nuestra misión es proporcionar soluciones de captación de agua pluvial sostenibles para asegurar el acceso a agua limpia y fomentar la conciencia en la gestión responsable de los recursos hídricos.</p>
+        <h2>Objetivo</h2>
+        <p>El objetivo de Aqua Pura es instalar sistemas de captación de agua pluvial en hogares y espacios públicos vulnerables, reducir el riesgo de inundaciones y capacitar a la comunidad en el mantenimiento de estos sistemas.</p>
+        <h2>Alcances</h2>
+        <p>Este proyecto busca beneficiar a la comunidad a través de la instalación de sistemas de captación en áreas críticas, la formación de los residentes en su mantenimiento y el seguimiento continuo para garantizar su efectividad.</p>
+        <img src="images.png" class="section-image">
+    </section>
+
+    <section id="requests">
+        <h2>Solicitudes</h2>
+        <div class="form-container">
+            <img src="request-image.jpg" class="section-image">
+            <form action="#" method="post" id="requestForm">
+                <label for="requestType">Seleccione el tipo de solicitud:</label>
+                <select id="requestType" name="requestType" required>
+                    <option value="">--Seleccione una opción--</option>
+                    <option value="instalacion">Solicitud para Instalación de Sistema de Captación</option>
+                    <option value="capacitacion">Solicitud de Capacitación</option>
+                    <option value="mantenimiento">Solicitud de Mantenimiento</option>
+                    <option value="reporteFallas">Reporte de Fallas</option>
+                </select>
+
+                <label for="name">Nombre Completo:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="description">Descripción de la Solicitud:</label>
+                <textarea id="description" name="description" rows="5" placeholder="Describa aquí su solicitud o reporte" required></textarea>
+
+                <input type="submit" value="Enviar Solicitud">
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Proyecto Aqua Pura | Contacto: info@aquapura.com | Claudia Carolina Marquez de la Mora</p>
+</footer>
+
+<!-- Contenedor de notificación -->
+<div id="notification" class="notification">Su solicitud ha sido enviada exitosamente.</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
