@@ -1,0 +1,166 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f8ff; /* Fondo azul claro */
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #078cc2; /* Azul claro para el encabezado */
+    color: white;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    padding: 0.5em 1em;
+}
+
+.logo {
+    height: 60px;
+    margin-right: 20px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background: #056b9e; /* Azul medio para la barra de navegación */
+    padding: 0.5em 1em;
+    flex-grow: 1;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #e1f5fe; /* Azul muy claro para los enlaces */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9em;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffffff; /* Blanco al pasar el mouse */
+}
+
+.header-content {
+    text-align: center;
+    padding: 1em 0;
+}
+
+.header-content h1 {
+    font-size: 1.8em;
+    margin-bottom: 0.2em;
+}
+
+.header-content p {
+    font-size: 1em;
+    color: #b3e5fc; /* Azul muy claro para el subtítulo */
+}
+
+/* Main Content */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    color: #056b9e; /* Azul medio para los títulos */
+    margin-bottom: 10px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-section, .form-container {
+    position: relative;
+}
+
+.section-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Formulario */
+.form-container {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #e1f5fe; /* Fondo azul muy claro */
+}
+
+select, textarea, input[type="text"], input[type="email"], input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+}
+
+input[type="submit"] {
+    background-color: #078cc2; /* Azul claro para el botón de enviar */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #056b9e; /* Azul medio al pasar el mouse */
+}
+
+/* Footer */
+footer {
+    background-color: #056b9e; /* Azul medio para el pie de página */
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 20px;
+}
+
+/* Notificación */
+.notification {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #078cc2; /* Azul claro para la notificación */
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 0.9em;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    z-index: 1000;
+}
+
+.notification.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
